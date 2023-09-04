@@ -1,0 +1,201 @@
+.column{
+    margin-top: 2rem;
+}
+
+.column .input{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    color: black;
+
+    
+}
+
+
+.chkbox{
+    display: block;
+
+}
+
+.chkfirst input{
+    width: 30px;
+  height: 30px;
+  padding: 0;
+  margin:0;
+  vertical-align: bottom;
+  position: relative;
+  top: -1px;
+  color: white;
+  accent-color: rgb(0, 204, 0);
+  overflow: hidden;
+}
+.chkfirst{
+    background: rgba(255, 255, 255, 0.151);
+    backdrop-filter:blur(1rem);
+}
+.chkfirst label{
+    display: inline;
+  padding-left: 15px;
+  text-indent: -15px;
+  position: relative;
+  top: -20%;
+  font-size: 1rem;
+}
+.chksecond{
+    margin-top: 1rem;
+    background: rgba(255, 255, 255, 0.151);
+    backdrop-filter:blur(1rem);
+}
+.chksecond input{
+    width: 30px;
+  height: 30px;
+  padding: 0;
+  margin:0;
+
+  vertical-align: bottom;
+  position: relative;
+  top: -1px;
+  color: white;
+  accent-color: rgb(139, 0, 204);
+  overflow: hidden;
+}
+.chksecond label{
+    display: inline;
+  padding-left: 15px;
+  text-indent: -15px;
+  position: relative;
+  top: -20%;
+  font-size: 1rem;
+}
+img{
+    width: 10%;
+    filter: invert(98%) sepia(2%) saturate(8%) hue-rotate(44deg) brightness(101%) contrast(101%);
+}
+
+.main-wrapper.active img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    filter: none;
+}
+.main-wrapper.active p{
+    display: none;
+}
+
+.main{
+    background: rgba(255, 255, 255, 0.151);
+-webkit-backdrop-filter: blur(19px);
+backdrop-filter: blur(19px);
+border: 1px solid rgba(255, 255, 255, 0.089);
+
+-webkit-box-shadow: 7.5px 11.5px 10.5px 4px #1497ca;
+-moz-box-shadow: 7.5px 11.5px 10.5px 4px #1abcc2;
+box-shadow: 7.5px 11.5px 10.5px 4px #00000041;
+}
+
+@media screen and (max-device-width: 900px) 
+{   
+    .chkfirst label{
+        display: inline;
+      padding-left: 10px;
+      text-indent: -10px;
+      position: relative;
+      top: -20%;
+      font-size: 1.5vw;
+    }
+    .chksecond label{
+        display: inline;
+      padding-left: 10px;
+      text-indent: -10px;
+      position: relative;
+      top: -20%;
+      font-size: 1.5vw;
+    }
+}
+
+@media screen and (max-device-width: 700px) {
+    .main{
+        padding: .7rem;
+        width: 70%;
+    }
+    .choosefile{
+        height: 26vh;
+        width: 100%;
+    }
+
+    .chksecond input{
+        width: 20px;
+      height: 20px;
+      padding: 0;
+      margin:0;
+      vertical-align: bottom;
+      position: relative;
+      top: -1px;
+      color: white;
+      accent-color: rgb(139, 0, 204);
+      overflow: hidden;
+    }
+    .chksecond label{
+        display: inline;
+      padding-left: 5px;
+      text-indent: -5px;
+      position: relative;
+      top: -10%;
+      font-size: 12px;
+    }
+
+    .chkfirst input{
+        width: 20px;
+      height: 20px;
+      padding: 0;
+      margin:0;
+      vertical-align: bottom;
+      position: relative;
+      top: -1px;
+      color: white;
+      accent-color: rgb(0, 204, 0);
+      overflow: hidden;
+    }
+    .chkfirst label{
+        display: inline;
+      padding-left: 5px;
+      text-indent: -5px;
+      position: relative;
+      top: -10%;
+      font-size: 12px;
+    }
+
+    .chkfirst .chksecond input{
+        width: 100%;
+    }
+}
+
+@media screen and (max-device-width: 411px){
+
+
+    .chkbox{
+        display: block;
+
+    }
+    .chksecond{
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-device-width:269px){
+    .links{
+       position: absolute;
+       top: 97%;
+       left: 50%;
+       transform: translateX(-50%);
+       
+    }
+    .heading{
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+    .choosefile p{
+        font-size: .9rem;
+    }
+}

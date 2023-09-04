@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="text-white m-0 p-0">
+    <nav>
+        <div class="nav-main bg-gradient-to-tr from-slate-900 via-indigo-900 to-sky-800 h-[100vh] flex justify-between p-[2rem]">
+            <div class="heading font-extrabold">
+                <span class="tracking-wider">Press</span>
+                <span class="text-green-400 tracking-wider">Com</span>
+            </div>
+            <div class="links space-x-5">
+                <a href=""><i class="fa-brands fa-github"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!--the main content-->
+
+    <div class="main-wrapper">
+        <div class="main absolute top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%] p-[1.5rem] rounded-xl ">
+            <div class="choosefile cursor-pointer flex items-center justify-center flex-col rounded-[5px] border-dashed border-[3px] border-green-400/100 ... h-[30vh]">
+                <input type="file" accept="image/*" class="hidden">
+                <img src="./upload-solid.svg" alt="upload">
+                <p>Choose File to Upload</p>
+                
+            </div>
+            <div class="column ">
+                <div class="width input space-x-5">
+                <div class="flex flex-col">
+                    <label for="Width"><span class="text-green-400 font-bold">W</span><span class="text-white">idth</span></label>
+                    <input type="number" class="h-10 w-full outline-none mt-[7px] p-[15px] rounded-xl">
+                </div> 
+
+                <div class="height flex flex-col">      
+                    <label for="Height"><span class="text-green-400 font-bold">H</span><span class="text-white">eight</span></label>
+                    <input type="number" class="h-10 w-full outline-none mt-[7px] p-[15px] rounded-xl">
+                </div>
+
+                </div>  
+                <div class="chkbox flex justify-between mt-[1rem]">
+                    <div class="chkfirst p-2
+                    rounded-xl">   
+                        <input type="checkbox" class="" id="ratio" checked>   
+                        <label class="">Lock aspect ratio</label>
+                        
+                    </div>
+                    <div class="chksecond p-2
+                    rounded-xl"> 
+                        <input type="checkbox">     
+                        <label >Reduce quality</label>
+                        
+                    </div>
+                </div>
+
+            </div>
+            
+            <div>
+                <button class="download-btn cursor-pointer w-full p-[15px] bg-red-800 rounded-xl mt-5">
+                    Download Image
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/4157b5f978.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
